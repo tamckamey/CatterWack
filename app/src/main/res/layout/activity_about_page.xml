@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutPage">
+
+    <Button
+        android:id="@+id/ageEstimatorButton"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/age_estimator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apiInfo"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/genderEstimatorLink"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/gender_estimator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageEstimatorButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/catPictureButton"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/cat_picture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderEstimatorLink"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/about_backButton"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/go_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/about_catPawRight"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="-100dp"
+        android:contentDescription="@string/rightarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/about_title"
+        app:layout_constraintTop_toTopOf="@+id/about_title"
+        app:srcCompat="@drawable/catarm_right" />
+
+    <ImageView
+        android:id="@+id/about_catPawLeft"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="-100dp"
+        android:contentDescription="@string/leftarm"
+        app:layout_constraintEnd_toStartOf="@+id/about_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/about_title"
+        app:srcCompat="@drawable/catarm_left" />
+
+    <TextView
+        android:id="@+id/about_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/this_is_literally_the_worst_app_ever"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_title" />
+
+    <TextView
+        android:id="@+id/about_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/tell_me_why"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginBottom="-25dp"
+        android:contentDescription="@string/angrycat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/angrycat" />
+
+    <TextView
+        android:id="@+id/about_paragraph"
+        android:layout_width="371dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/a_little_harsh_but_i_understand_yes_this_app_isn_t_great_it_doesn_t_have_much_of_a_purpose_besides_hopefully_getting_a_good_grade_in_my_class_i_searched_for_free_apis_to_use_for_projects_and_i_found_a_list_of_on_reddit_the_list_had_some_things_to_do_with_names_cat_pictures_and_cat_facts_i_came_up_with_the_idea_of_combine_these_to_make_an_app_that_takes_a_cat_name_provides_an_estimate_gender_and_age_and_then_gives_a_picture_of_the_cat"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_subheading" />
+
+    <TextView
+        android:id="@+id/apiInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/api_information_can_be_found_below"
+        android:textAlignment="textStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_paragraph" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

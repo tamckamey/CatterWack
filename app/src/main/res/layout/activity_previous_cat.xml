@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".previous_cat">
+
+    <Button
+        android:id="@+id/previous_previous"
+        android:layout_width="54dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/BackArrow"
+        app:layout_constraintBottom_toTopOf="@+id/previous_catImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catSubHeading" />
+
+    <Button
+        android:id="@+id/previous_next"
+        android:layout_width="54dp"
+        android:layout_height="235dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/Forward"
+        app:layout_constraintBottom_toTopOf="@+id/previous_catImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catSubHeading"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/previous_BackButton"
+        android:layout_width="190dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="10dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/previous_catGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Gender"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catAgeField" />
+
+    <TextView
+        android:id="@+id/previous_genderField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catGenderLabel" />
+
+    <TextView
+        android:id="@+id/previous_catNameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catNameLabel" />
+
+    <TextView
+        android:id="@+id/previous_catAgeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Age (Cat Years)"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catSubHeading" />
+
+    <TextView
+        android:id="@+id/previous_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Your Cat!"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/previous_catSubHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="It has been waiting!"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_Title" />
+
+    <ImageView
+        android:id="@+id/catPawRight5"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="-30dp"
+        android:contentDescription="@string/rightarm"
+        app:layout_constraintStart_toEndOf="@+id/previous_Title"
+        app:layout_constraintTop_toTopOf="@+id/previous_Title"
+        app:srcCompat="@drawable/catarm_right" />
+
+    <ImageView
+        android:id="@+id/catPawLeft5"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="-30dp"
+        android:contentDescription="@string/leftarm"
+        app:layout_constraintEnd_toStartOf="@+id/previous_Title"
+        app:layout_constraintTop_toTopOf="@+id/previous_Title"
+        app:srcCompat="@drawable/catarm_left" />
+
+    <TextView
+        android:id="@+id/previous_catNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catSubHeading" />
+
+    <TextView
+        android:id="@+id/previous_catAgeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_catAgeLabel" />
+
+    <ImageView
+        android:id="@+id/previous_catImage"
+        android:layout_width="0dp"
+        android:layout_height="294dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/angrycat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/preview_genderField"
+        app:layout_constraintVertical_bias="0.404" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

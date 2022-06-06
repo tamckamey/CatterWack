@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Catterwack</string>
+    <string name="welcome_to_catterwack">Welcome to Catterwack!</string>
+    <string name="we_make_cats_for_you">We make cats. For you.</string>
+    <string name="splashcat">SplashCat</string>
+    <string name="start">Start</string>
+    <string name="new_cat">New Cat</string>
+    <string name="load_cat">Load Cat</string>
+    <string name="why">Why?</string>
+    <string name="catterwack_by_tanner_mckamey">Catterwack By Tanner McKamey</string>
+    <string name="leftarm">leftArm</string>
+    <string name="rightarm">rightArm</string>
+    <string name="this_is_literally_the_worst_app_ever">This is literally the worst app ever.</string>
+    <string name="tell_me_why">Tell Me Why</string>
+    <string name="angrycat">angryCat</string>
+    <string name="a_little_harsh_but_i_understand_yes_this_app_isn_t_great_it_doesn_t_have_much_of_a_purpose_besides_hopefully_getting_a_good_grade_in_my_class_i_searched_for_free_apis_to_use_for_projects_and_i_found_a_list_of_on_reddit_the_list_had_some_things_to_do_with_names_cat_pictures_and_cat_facts_i_came_up_with_the_idea_of_combine_these_to_make_an_app_that_takes_a_cat_name_provides_an_estimate_gender_and_age_and_then_gives_a_picture_of_the_cat">A little harsh, but I understand. Yes, this app isn\'t great. It doesn\'t have much of a purpose besides hopefully getting a good grade in my class. I searched for free APIs to use for projects, and I found a list of on Reddit. The list had some things to do with names, cat pictures, and cat facts. I came up with the idea of combine these to make an app that takes a cat name, provides an estimate gender and age, and then gives a picture of the cat.</string>
+    <string name="age_estimator">Age Estimator</string>
+    <string name="gender_estimator">Gender Estimator</string>
+    <string name="cat_picture">Cat Picture</string>
+    <string name="go_back">Go Back</string>
+    <string name="api_information_can_be_found_below">API information can be found below.</string>
+    <string name="it_s_easy_all_we_need_is_the_name">It\'s easy! All we need is the name.</string>
+    <string name="let_s_make_a_new_cat">Let\'s Make A New Cat</string>
+    <string name="meow">Meow</string>
+    <string name="name">Name</string>
+    <string name="new_kitten">New Kitten</string>
+    <string name="BackArrow"><![CDATA[<]]></string>
+    <string name="Forward"><![CDATA[>]]></string>
+</resources>

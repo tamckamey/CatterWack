@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newCat">
+
+    <Button
+        android:id="@+id/new_backButton"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/go_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/new_createButton" />
+
+    <ImageView
+        android:id="@+id/catPawLeft2"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="-100dp"
+        android:contentDescription="@string/leftarm"
+        app:layout_constraintEnd_toStartOf="@+id/newCat_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/newCat_title"
+        app:srcCompat="@drawable/catarm_left" />
+
+    <ImageView
+        android:id="@+id/catPawRight2"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="-100dp"
+        android:contentDescription="@string/rightarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/newCat_title"
+        app:layout_constraintTop_toTopOf="@+id/newCat_title"
+        app:srcCompat="@drawable/catarm_right" />
+
+    <TextView
+        android:id="@+id/newCat_subheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/it_s_easy_all_we_need_is_the_name"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCat_title" />
+
+    <TextView
+        android:id="@+id/newCat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/let_s_make_a_new_cat"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/new_catName"
+        android:layout_width="312dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/new_kitten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCat_subheading" />
+
+    <Button
+        android:id="@+id/new_createButton"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:text="@string/meow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_catName" />
+
+    <ImageView
+        android:id="@+id/new_kitten"
+        android:layout_width="168dp"
+        android:layout_height="334dp"
+        android:layout_marginTop="-275dp"
+        android:layout_marginEnd="-125dp"
+        android:contentDescription="@string/new_kitten"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:srcCompat="@drawable/newkitten" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

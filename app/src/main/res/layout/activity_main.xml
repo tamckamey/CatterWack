@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/loadCat"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:text="@string/load_cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newCat"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/whyButton"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:text="@string/why"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loadCat"
+        app:layout_constraintVertical_bias="0.104" />
+
+    <TextView
+        android:id="@+id/menuSubheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/we_make_cats_for_you"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuTitle" />
+
+    <TextView
+        android:id="@+id/credits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/catterwack_by_tanner_mckamey"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/app_name"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/catPawRight"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="-30dp"
+        android:contentDescription="@string/rightarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menuTitle"
+        app:layout_constraintTop_toTopOf="@+id/menuTitle"
+        app:srcCompat="@drawable/catarm_right" />
+
+    <ImageView
+        android:id="@+id/catPawLeft"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="-30dp"
+        android:contentDescription="@string/leftarm"
+        app:layout_constraintEnd_toStartOf="@+id/menuTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/menuTitle"
+        app:srcCompat="@drawable/catarm_left" />
+
+    <Button
+        android:id="@+id/newCat"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/new_cat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
